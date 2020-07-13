@@ -1,0 +1,6 @@
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/MathFunctions/lib)
+#message(${PROJECT_SOURCE_DIR}/lib)
+include_directories(include)
+add_library(MathFunctions src/mysqrt.cxx)
+install(FILES "./include/MathFunctions.h" DESTINATION include)
+install(TARGETS MathFunctions DESTINATION bin)
