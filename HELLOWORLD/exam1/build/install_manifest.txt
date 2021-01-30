@@ -1,4 +1,0 @@
-/home/zhuhe/zhuhe/HELLOWORLD/exam1/install/share/doc/COPYRIGHT
-/home/zhuhe/zhuhe/HELLOWORLD/exam1/install/share/doc/README
-/home/zhuhe/zhuhe/HELLOWORLD/exam1/install/share/doc/hello.txt
-/home/zhuhe/zhuhe/HELLOWORLD/exam1/install/bin/hello
