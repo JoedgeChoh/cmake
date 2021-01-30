@@ -1,4 +1,0 @@
-/usr/local/bin/Tutorial
-/usr/local/include/TutorialConfig.h
-/usr/local/include/MathFunctions.h
-/usr/local/bin/libMathFunctions.a

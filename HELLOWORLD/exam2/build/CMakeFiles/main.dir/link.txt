@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/main.dir/src/main.c.o  -o ../bin/main -Wl,-rpath,/home/zhuhe/zhuhe/HELLOWORLD/exam2/lib: ../lib/libhello.so 

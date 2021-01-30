@@ -1,0 +1,3 @@
+/home/zhuhe/zhuhe/HELLOWORLD/exam3/build/CMakeFiles/rebuild_cache.dir
+/home/zhuhe/zhuhe/HELLOWORLD/exam3/build/CMakeFiles/main.dir
+/home/zhuhe/zhuhe/HELLOWORLD/exam3/build/CMakeFiles/edit_cache.dir
