@@ -1,0 +1,3 @@
+/home/zhuhe/program/cmake/HELLOWORLD/exam2/install/bin/main
+/home/zhuhe/program/cmake/HELLOWORLD/exam2/install/lib/libhello.so
+/home/zhuhe/program/cmake/HELLOWORLD/exam2/install/include/hello/hello.h

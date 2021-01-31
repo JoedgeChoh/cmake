@@ -12,7 +12,6 @@ set_target_properties(hello_static PROPERTIES OUTPUT_NAME "hello") # 库文件�
 
 add_executable(main src/main.c)
 target_link_libraries(main hello)
-# link_directories(./install/lib)
 install(TARGETS main hello # hello_static
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib

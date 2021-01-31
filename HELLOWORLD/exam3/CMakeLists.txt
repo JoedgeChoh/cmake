@@ -9,4 +9,4 @@ include_directories(${PROJECT_SOURCE_DIR}/../exam2/include)
 
 link_directories(${PROJECT_SOURCE_DIR}/../exam2/lib)
 add_executable(main src/main.c)
-# target_link_libraries(main hello)
+target_link_libraries(main hello)
