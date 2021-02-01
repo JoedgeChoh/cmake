@@ -1,13 +1,27 @@
-FIND_PATH(HELLO_INCLUDE_DIR hello.h /home/zhuhe/program/cmake/HELLOWORLD/exam2/include)
-FIND_LIBRARY(HELLO_LIBRARY NAMES libhello.so PATH /home/zhuhe/program/cmake/HELLOWORLD/exam2/lib)
+FIND_PATH(HELLO_INCLUDE_DIR hello.h ${CMAKE_CURRENT_LIST_DIR}/../../exam2/install/include/hello)
+# FIND_PATH(HELLO_INCLUDE_DIR hello.h /home/software/cmake/HELLOWORLD/exam2/install/include/hello)
+# FIND_PATH(HELLO_INCLUDE_DIR uuid.h /home/software/cmake/HELLOWORLD/exam2/include)
+# FIND_LIBRARY(HELLO_LIBRARY hello /home/software/cmake/HELLOWORLD/exam2/lib) 
+FIND_LIBRARY(HELLO_LIBRARY hello ${CMAKE_CURRENT_LIST_DIR}/../../exam2/lib) 
 
-IF (HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+## 测试头文件以及库文件搜索是否成功
+# IF(HELLO_INCLUDE_DIR)
+#     SET(INCLUDE_FOUND TRUE)
+# ENDIF(HELLO_INCLUDE_DIR)
+# 
+# IF(HELLO_LIBRARY)
+#     SET(LIBRARY_FOUND TRUE)
+# ENDIF(HELLO_LIBRARY)
+
+IF(HELLO_LIBRARY AND HELLO_INCLUDE_DIR)
     SET(HELLO_FOUND TRUE)
-ENDIF (HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+ENDIF(HELLO_LIBRARY AND HELLO_INCLUDE_DIR)
+# 搜索到依赖包并且调用时设置了QURETLY参数，将不会打印"Found Hello:${HELLO_LIBRARY}"
 IF (HELLO_FOUND)
     IF (NOT HELLO_FIND_QUIETLY)
         MESSAGE(STATUS "Found Hello: ${HELLO_LIBRARY}")
     ENDIF (NOT HELLO_FIND_QUIETLY)
+# 没有搜索到包是终端打印"Could not find hello library" 
 ELSE (HELLO_FOUND)
     IF (HELLO_FIND_REQUIRED)
         MESSAGE(FATAL_ERROR "Could not find hello library")
