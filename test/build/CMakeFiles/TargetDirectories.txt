@@ -1,0 +1,3 @@
+/home/zhuhe/zhuhe/cmake/test/build/CMakeFiles/rebuild_cache.dir
+/home/zhuhe/zhuhe/cmake/test/build/CMakeFiles/main.dir
+/home/zhuhe/zhuhe/cmake/test/build/CMakeFiles/edit_cache.dir
