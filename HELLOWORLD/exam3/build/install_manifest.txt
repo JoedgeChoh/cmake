@@ -1,1 +1,0 @@
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/install/bin/main3

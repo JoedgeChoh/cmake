@@ -1,7 +1,0 @@
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/install/strip.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/edit_cache.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/rebuild_cache.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/list_install_components.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/main3.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/install/local.dir
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles/install.dir

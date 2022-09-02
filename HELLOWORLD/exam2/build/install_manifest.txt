@@ -1,5 +1,0 @@
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/bin/main
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/lib/libhello.so
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/include/hello.h
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/lib/cmake/hello/hello-config.cmake
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/lib/cmake/hello/hello-config-noconfig.cmake
