@@ -15,9 +15,9 @@ target_include_directories(hello PUBLIC
 set_target_properties(hello PROPERTIES PUBLIC_HEADER "include/hello.h")
 
 
-add_executable(main src/main.c)
-target_link_libraries(main hello)
-install(TARGETS main hello # hello_static
+# add_executable(main src/main.c)
+# target_link_libraries(main hello)
+install(TARGETS  hello # hello_static
   EXPORT hello-targets
   PUBLIC_HEADER DESTINATION include
   RUNTIME DESTINATION bin
