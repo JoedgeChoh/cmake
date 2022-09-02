@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/hello.h
+/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/install/include/hello.h
 stdio.h
 -
 
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/src/hello.c
+/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/src/main.c
 hello.h
-/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/src/hello.h
+/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/src/hello.h
 

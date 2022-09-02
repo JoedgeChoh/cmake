@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/zhuhe/program/cmake/HELLOWORLD/exam2/include 
+C_INCLUDES = -I/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/include 
 

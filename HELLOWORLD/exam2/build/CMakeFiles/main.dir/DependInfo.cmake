@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zhuhe/program/cmake/HELLOWORLD/exam2/src/main.c" "/home/zhuhe/program/cmake/HELLOWORLD/exam2/build/CMakeFiles/main.dir/src/main.c.o"
+  "/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/src/main.c" "/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build/CMakeFiles/main.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zhuhe/program/cmake/HELLOWORLD/exam2/build/CMakeFiles/hello.dir/DependInfo.cmake"
+  "/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build/CMakeFiles/hello.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

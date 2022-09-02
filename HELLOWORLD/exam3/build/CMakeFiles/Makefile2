@@ -54,45 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhuhe/program/cmake/HELLOWORLD/exam3
+CMAKE_SOURCE_DIR = /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhuhe/program/cmake/HELLOWORLD/exam3/build
+CMAKE_BINARY_DIR = /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/main3.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhuhe/program/cmake/HELLOWORLD/exam3/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/main3.dir/all:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/depend
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles --progress-num=1,2 "Built target main3"
+.PHONY : CMakeFiles/main3.dir/all
 
 # Include target in all.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/main3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/program/cmake/HELLOWORLD/exam3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/program/cmake/HELLOWORLD/exam3/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+CMakeFiles/main3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam3/build/CMakeFiles 0
+.PHONY : CMakeFiles/main3.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+main3: CMakeFiles/main3.dir/rule
 
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+.PHONY : main3
 
 # clean rule for target.
-clean: CMakeFiles/main.dir/clean
+CMakeFiles/main3.dir/clean:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/clean
+.PHONY : CMakeFiles/main3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/main3.dir/clean
 
 .PHONY : clean
 

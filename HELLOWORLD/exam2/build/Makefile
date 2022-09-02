@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhuhe/program/cmake/HELLOWORLD/exam2
+CMAKE_SOURCE_DIR = /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhuhe/program/cmake/HELLOWORLD/exam2/build
+CMAKE_BINARY_DIR = /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,22 +80,10 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,11 +112,23 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/program/cmake/HELLOWORLD/exam2/build/CMakeFiles /home/zhuhe/program/cmake/HELLOWORLD/exam2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build/CMakeFiles /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/program/cmake/HELLOWORLD/exam2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhuhe/zhuhe/cmake/HELLOWORLD/exam2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,32 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
-
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
-
-# fast build rule for target.
-hello/fast:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
-
-#=============================================================================
-# Target rules for targets named hello_static
-
-# Build rule for target.
-hello_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello_static
-.PHONY : hello_static
-
-# fast build rule for target.
-hello_static/fast:
-	$(MAKE) -f CMakeFiles/hello_static.dir/build.make CMakeFiles/hello_static.dir/build
-.PHONY : hello_static/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -195,6 +169,19 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named hello
+
+# Build rule for target.
+hello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
+
+# fast build rule for target.
+hello/fast:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+.PHONY : hello/fast
+
 src/hello.o: src/hello.c.o
 
 .PHONY : src/hello.o
@@ -202,7 +189,6 @@ src/hello.o: src/hello.c.o
 # target to build an object file
 src/hello.c.o:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.c.o
-	$(MAKE) -f CMakeFiles/hello_static.dir/build.make CMakeFiles/hello_static.dir/src/hello.c.o
 .PHONY : src/hello.c.o
 
 src/hello.i: src/hello.c.i
@@ -212,7 +198,6 @@ src/hello.i: src/hello.c.i
 # target to preprocess a source file
 src/hello.c.i:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.c.i
-	$(MAKE) -f CMakeFiles/hello_static.dir/build.make CMakeFiles/hello_static.dir/src/hello.c.i
 .PHONY : src/hello.c.i
 
 src/hello.s: src/hello.c.s
@@ -222,7 +207,6 @@ src/hello.s: src/hello.c.s
 # target to generate assembly for a file
 src/hello.c.s:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.c.s
-	$(MAKE) -f CMakeFiles/hello_static.dir/build.make CMakeFiles/hello_static.dir/src/hello.c.s
 .PHONY : src/hello.c.s
 
 src/main.o: src/main.c.o
@@ -260,13 +244,12 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... hello"
-	@echo "... hello_static"
 	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... hello"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... src/hello.o"
 	@echo "... src/hello.i"
 	@echo "... src/hello.s"
